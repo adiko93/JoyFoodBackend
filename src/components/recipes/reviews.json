@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_recipes_reviews",
+  "info": {
+    "displayName": "reviews",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "decimal"
+    }
+  }
+}

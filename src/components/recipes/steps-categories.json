@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_recipes_steps_categories",
+  "info": {
+    "displayName": "Steps Categories",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipes.steps"
+    }
+  }
+}

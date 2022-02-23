@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_recipes_ingredients_categories",
+  "info": {
+    "displayName": "Ingredients Categories",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipes.ingredient"
+    }
+  }
+}
