@@ -35,7 +35,7 @@
       "required": true
     },
     "rating": {
-      "type": "integer",
+      "type": "decimal",
       "min": 0,
       "max": 5,
       "default": 0
@@ -59,15 +59,22 @@
         "videos"
       ]
     },
-    "reviews": {
-      "type": "component",
-      "repeatable": true,
-      "component": "recipes.reviews"
-    },
     "categories": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "created_recipes"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "recipe"
     }
   }
 }
